@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#histry{
+  border: 1px solid #000000;
+  margin: 20px auto 30px;
+  border-collapse: collapse;
+}
+#histry tr:nth-child(2n){
+  background-color: #9f9f9f;
+}
+#histry tr td{
+  height: 15px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+#histry tr td:nth-child(1){
+  text-align: center;
+  font-weight: bold;
+  width: 200px;
+}
+#histry tr td:nth-child(2){
+  width: 550px;
+}
+
+/*
+  (c) 2019 Kawasaki, Hiroki
+*/

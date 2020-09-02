@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スライドパズル｜南町田グランベリーパーク紹介</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slidepuzzle.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/slidepuzzle.js"></script>
+</head>
+<body>
+  <header id="header"></header>
+  <div id="headerSpace"></div>
+  <main>
+    <h1>南町田スライドパズル</h1>
+    <div class="container">
+      <div class="clearfix">
+          <div id="slidePuzzleBox">
+            <div id="puzzle"></div>
+            <div class="clearfix" id="buttonBox">
+              <div class="btn" id="resetBtn">Reset</div>
+              <div class="btn" id="chanceBtn">Chance</div>
+            </div>
+          </div>
+          <div id="sb-ci-Box">
+            <table id="scoreBoard">
+              <tr><td>Time</td><td id="timerlabel">00:00</td></tr>
+              <tr><td>Count</td><td id="count">0</td></tr>
+            </table>
+            <table id="changeImage">
+              <tr><td>A</td><td>B</td></tr>
+              <tr><td>C</td><td>D</td></tr>
+            </table>
+            <table id="point">
+              <tr><td>A</td><td>B</td><td>C</td><td>D</td></tr>
+            </table>
+            <div class="btn" id="bounsBtn">特典</div>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="clearfix">
+          <div class="text">
+            <p class="center">遊び方</p>
+            <ol>
+              <li>アルファベットの好きなボタンをクリックしてゲーム開始！</li>
+              <li>パネルは空白エリアにスライドできるよ！</li>
+              <li>隣接するエリアにパネルがない場合、クリックできるよ！</li>
+              <li>絵が完成したら、ゲームクリア！</li>
+              <li>［Chance］ボタンで揃わないパズルも揃うかも？</li>
+            </ol>
+          </div>
+        </div>
+    </div>
+  </main>
+  <div id="topSkip"><a href="#headerSpace">↑</a></div>
+  <div id="footerSpace"></div>
+  <footer><small>© Kawasaki, Hiroki All Rights Reserved.</small></footer>
+</body>
+</html>
+
+<!--
+  (c) 2019 Kawasaki, Hiroki
+-->

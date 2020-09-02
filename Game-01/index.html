@@ -1,0 +1,87 @@
+﻿<html>
+<head>
+  <meta charset="utf-8">
+  <title>1120</title>
+  <style>
+    #game{
+      position: relative;
+      width: 60px;
+    }
+    #icon{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  </style>
+  <script>
+	//== 関数 ================================
+
+	//------------
+	// テーマ1
+	//------------
+
+	//キー押下時の処理
+	function exp1(){
+			console.log('押した');
+	}
+  //どのキーが押されたか判断
+  function exp2(a){
+			console.log(a.keyCode);
+	}
+
+  //アイコンの移動
+  function exp3(a){
+    let wk = document.getElementById("icon");
+		switch(a.keyCode){
+      case 37:
+        if(x-mPX >= 0){
+          x -= mPX;
+          wk.src = "img/icon.png"
+        }else{ wk.src = "img/collision.png" }
+        break;  //左
+      case 38:
+        if(y-mPX >= 0){
+          y -= mPX;
+          wk.src = "img/icon.png"
+        }else{ wk.src = "img/collision.png" }
+        break;  //上
+      case 39:
+        if(x+mPX <= 608){
+          x += mPX;
+          wk.src = "img/icon.png"
+        }else{ wk.src = "img/collision.png" }
+        break;  //右
+      case 40:
+        if(y+mPX <= 288){
+          y += mPX;
+          wk.src = "img/icon.png"
+        }else{ wk.src = "img/collision.png" }
+        break;  //下
+    }
+    wk.style.left = x;  //アイコンのx座標変更
+    wk.style.top = y;   //アイコンのy座標変更
+	}
+	//== メイン処理 ==========================
+
+	//------------
+	// テーマ1
+	//------------
+
+	//キー押下イベントを検知
+	//addEventListener("keydown", exp1);
+  //addEventListener("keydown", exp2);
+
+  let x = 0;    //アイコンのx座標
+  let y = 0;    //アイコンのy座標
+  let mPX = 5;  //アイコンの移動ピクセル
+  addEventListener("keydown", exp3);
+  </script>
+</head>
+<body>
+  <h2>Game</h2>
+  <div id="game">
+    <img src="img/panel.png">
+    <img src="img/icon.png" id="icon">
+  </div>
+</body>
+</html>

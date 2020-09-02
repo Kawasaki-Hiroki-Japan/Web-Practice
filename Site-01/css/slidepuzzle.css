@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+#slidePuzzleBox{
+  width: 440px; height: auto;
+  margin: 30px;
+}
+#puzzle{
+  width: 420px; height: 420px;
+  border: 10px solid #404090;
+}
+#puzzle div{
+  background-color: #000000;
+  width: 100px;  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 350%;
+}
+#buttonBox{
+  width: 420px;
+}
+#buttonBox .btn{
+  width: 180px; height: 70px;
+  background-color: #bfbfbf;
+  border-radius: 20px;
+  border: 3px solid #8f8f8f;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 64px;
+  margin: 15px;
+  float: left;
+}
+#sb-ci-Box{
+  width: 300px;
+}
+#scoreBoard{
+  margin: 30px;
+  border: 7px solid #404090;
+  padding: 5px;
+}
+#scoreBoard td{
+  border: 3px solid #404090;
+  background-color: #5f5f5f;
+  color: #ffffff;
+  width: 105px;  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 160%;
+}
+#changeImage{
+  margin-top: 40px;
+}
+#changeImage td{
+  color: #ffffff;
+  border: 5px solid #00f;
+  border-radius: 47px;
+  background-color: #77f;
+  width: 147px;  height: 73px;
+  font-size: 160%;
+  text-align: center;
+  vertical-align: middle;
+}
+#point{
+  margin-top: 20px;
+}
+#point td{
+  width: 100px;
+  font-size: 350%;
+  color: #9f9f9f;
+}
+#bounsBtn{
+  width: 200px; height: 80px;
+  background-color: #bfbfbf;
+  border: 5px solid #8f8f8f;
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 70px;
+  margin: 20px 50px;
+  float: left;
+}
+
+/*
+  (c) 2019 Kawasaki, Hiroki
+*/

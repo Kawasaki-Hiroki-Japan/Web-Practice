@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* グローバル */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    color: #000000;
+    font-size: 100%;
+    font: inherit;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+html, body{
+  width: 100%; height: 100%;
+}
+body{
+  background-color: #404040;
+}
+h1{
+  font-size: 60px;
+  font-weight: bold;
+  margin: 30px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+a.underline{
+  text-decoration: underline;
+}
+a.underline:hover{
+  color: #ff0000;
+}
+ul{
+  display: block;
+  list-style-type: disc;
+	list-style: none;
+}
+ul.ten{
+  list-style: initial;
+}
+ul.ten, ol{
+  text-align: left;
+}
+br{
+  clear: left;
+}
+p{
+  text-indent: 1em;
+}
+p.center{
+  text-align: center;
+  text-indent: 0;
+}
+hr{
+  height: 2px;
+  margin: 10px 30px;
+  background-color: #000000;
+}
+.container{
+  text-align: center;
+}
+.container>div{
+  display: inline-block;
+}
+.container div div{
+  float: left;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* ヘッダー */
+header{
+  width: 100%;  height: 80px;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+header nav{
+  width: 500px;
+  margin: 0 auto;
+}
+.main_menu li{
+  margin: 0 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 80px;
+  float: left;
+}
+.main_menu a{
+  color: #ffffff;
+}
+.main_menu a:hover{
+  border-bottom: 2px solid #ffffff;
+}
+#headerSpace{
+  height: 56px;
+}
+
+/* フッター */
+footer{
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+footer small{
+  height: 30px;
+  color: #ffffff;
+}
+#footerSpace{
+  height: 35px;
+}
+
+/* メイン */
+main{
+  background-color: #ffffff;
+  padding-top: 10px;
+  width: 60%; height: auto;
+  margin: 0 auto;
+  margin-top: 0;
+}
+main p{
+  margin: 5px 40px;
+}
+.topic{
+  padding: 40px 10px 10px;
+}
+.topic h2{
+  margin: 10px 0 10px 30px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.topic p{
+  margin: 0 50px;
+  font-size: 18px;
+}
+.topic .data{
+  text-align: right;
+}
+.text{
+  margin: 10px;
+}
+
+/* その他 */
+#topSkip{
+  width: 70px;  height: 70px;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 35px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#topSkip a{
+  font-size: 50px;
+  margin: auto;
+  color: #ffffff;
+}
+
+.space30{
+  height: 30px;
+}
+
+/*
+  (c) 2019 Kawasaki, Hiroki
+*/

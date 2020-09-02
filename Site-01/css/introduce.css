@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.box{
+  float: left;
+}
+.imageBox{
+  width: 400px;
+  margin-left: 70px;
+}
+.imageBox a p:hover{
+  color: #ff0000;
+}
+.box.text{
+  width: calc(100% - 500px);
+}
+
+/*
+  (c) 2019 Kawasaki, Hiroki
+*/
